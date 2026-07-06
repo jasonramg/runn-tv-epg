@@ -2,11 +2,14 @@ import hashlib
 import subprocess
 import sys
 from pathlib import Path
+from datetime import datetime, timezone
+
 from src.main import main
 from src.version import VERSION
 from src.gitutils import git
+from src.logger import log
 
-print(f"RunnTV Toolkit v{VERSION}")
+log.info("RunnTV Toolkit v%s", VERSION)
 
 XML = Path("output/epg.xml")
 HASH = Path("output/.epg.sha256")
@@ -25,8 +28,18 @@ def sha256(path):
     return h.hexdigest()
 
 
-print("Generating EPG...")
-main()
+log.info("Generating EPG...")
+
+try:
+    main()
+
+except KeyboardInterrupt:
+    print("\nBuild cancelled by user.")
+    sys.exit(1)
+
+except Exception as e:
+    log.exception("Build failed")
+    sys.exit(1)
 
 new_hash = sha256(XML)
 
@@ -41,7 +54,7 @@ if new_hash == old_hash:
 
 HASH.write_text(new_hash)
 
-print("Changes detected.")
+log.info("Changes detected.")
 
 git("add", "output", "docs/output")
 
@@ -53,8 +66,12 @@ if result.returncode == 0:
     print("Nothing changed.")
     sys.exit(0)
 
-git("commit", "-m", "Automatic EPG update")
+timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+
+message = f"EPG Update - {timestamp}"
+
+git("commit", "-m", message)
 
 git("push")
 
-print("GitHub updated.")
+log.info("GitHub updated.")
