@@ -35,6 +35,9 @@ def main():
 
     write_manifest(channels, programmes)
 
+    from src.publisher import publish
+    publish()
+
     print()
 
     log.info("XMLTV written.")
