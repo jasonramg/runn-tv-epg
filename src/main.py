@@ -6,15 +6,29 @@ from src.downloader import Downloader
 def main():
     xml = Downloader().download()
 
-    print(f"Downloaded {len(xml)} bytes")
-
     root = etree.fromstring(xml)
 
-    print(f"Root tag: {root.tag}")
+    print(f"Channels: {len(root.findall('item'))}")
 
-    items = root.findall("item")
+    first = root.find("item")
 
-    print(f"Channels found: {len(items)}")
+    print("\n=== FIRST CHANNEL ===")
+    print("Title:", first.findtext("title"))
+    print("Code :", first.findtext("channelCode"))
+    print("ID   :", first.findtext("id"))
+
+    schedules = first.find("schedules")
+
+    print("Schedules:", len(schedules.findall("schedules")))
+
+    program = schedules.find("schedules")
+
+    print("\n=== FIRST PROGRAM ===")
+    print("Name      :", program.findtext("programName"))
+    print("Start     :", program.findtext("startTimeEpoch"))
+    print("Duration  :", program.findtext("durationSeconds"))
+    print("Language  :", program.findtext("language"))
+    print("Age Rating:", program.findtext("ageRating"))
 
 
 if __name__ == "__main__":
