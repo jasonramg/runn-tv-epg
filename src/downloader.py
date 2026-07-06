@@ -35,9 +35,9 @@ class Downloader:
 
         self.session.headers.update({
             "User-Agent": USER_AGENT,
-            "Accept": "application/xml,text/xml,*/*",
-            "Accept-Encoding": "gzip, deflate, br",
-            "Connection": "keep-alive"
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+            "Accept-Language": "en-IN,en;q=0.5",
+            "Upgrade-Insecure-Requests": "1",
         })
 
     def download(self) -> bytes:
@@ -48,6 +48,18 @@ class Downloader:
             API_URL,
             timeout=TIMEOUT
         )
+
+        print("Final URL:", r.url)
+        print("Content-Type:", r.headers.get("Content-Type"))
+        print("Content-Length:", r.headers.get("Content-Length"))
+
+        # Add these lines
+        print("Server:", r.headers.get("Server"))
+        print("Via:", r.headers.get("Via"))
+        print("CF-Cache-Status:", r.headers.get("CF-Cache-Status"))
+        print("Age:", r.headers.get("Age"))
+        print("ETag:", r.headers.get("ETag"))
+        print("Last-Modified:", r.headers.get("Last-Modified"))
 
         log.info("Status: %s", r.status_code)
 

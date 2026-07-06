@@ -20,6 +20,10 @@ def main():
     print()
     print("EPG generated successfully.")
 
+    print("\nChannels returned by API:")
+    for ch in channels:
+        print(ch.id, "-", ch.name)
+
 
 if __name__ == "__main__":
     main()
