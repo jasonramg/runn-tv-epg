@@ -1,33 +1,42 @@
-fetch("../output/manifest.json")
+const BASE = "/runn-tv-epg/";
 
-.then(r => r.json())
+fetch(BASE + "output/manifest.json")
+    .then(response => response.json())
+    .then(manifest => {
 
-.then(m => {
+        document.getElementById("channels").textContent =
+            manifest.channels;
 
-document.getElementById("channels").textContent =
-m.channels;
+        document.getElementById("programmes").textContent =
+            manifest.programmes;
 
-document.getElementById("programmes").textContent =
-m.programmes;
+        document.getElementById("updated").textContent =
+            new Date(manifest.generated).toLocaleString();
 
-document.getElementById("updated").textContent =
-new Date(m.generated).toLocaleString();
 
-const downloads =
-document.getElementById("downloads");
+        const downloads =
+            document.getElementById("downloads");
 
-for(const [name,file] of Object.entries(m.downloads)){
 
-const a=document.createElement("a");
+        for (const [name, file] of Object.entries(manifest.downloads)) {
 
-a.className="download";
+            const link = document.createElement("a");
 
-a.href="../output/"+file;
+            link.className = "download";
 
-a.textContent="📥 "+file;
+            link.href = BASE + "output/" + file;
 
-downloads.appendChild(a);
+            link.textContent = "📥 " + file;
 
-}
+            downloads.appendChild(link);
+        }
 
-});
+    })
+    .catch(error => {
+
+        console.error(
+            "Failed to load manifest:",
+            error
+        );
+
+    });
