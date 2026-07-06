@@ -1,34 +1,26 @@
-from lxml import etree
-
 from src.downloader import Downloader
+from src.parser import parse
 
 
 def main():
     xml = Downloader().download()
 
-    root = etree.fromstring(xml)
+    channels, programmes = parse(xml)
 
-    print(f"Channels: {len(root.findall('item'))}")
+    print(f"Channels   : {len(channels)}")
+    print(f"Programmes : {len(programmes)}")
 
-    first = root.find("item")
+    if programmes:
+        p = programmes[0]
 
-    print("\n=== FIRST CHANNEL ===")
-    print("Title:", first.findtext("title"))
-    print("Code :", first.findtext("channelCode"))
-    print("ID   :", first.findtext("id"))
-
-    schedules = first.find("schedules")
-
-    print("Schedules:", len(schedules.findall("schedules")))
-
-    program = schedules.find("schedules")
-
-    print("\n=== FIRST PROGRAM ===")
-    print("Name      :", program.findtext("programName"))
-    print("Start     :", program.findtext("startTimeEpoch"))
-    print("Duration  :", program.findtext("durationSeconds"))
-    print("Language  :", program.findtext("language"))
-    print("Age Rating:", program.findtext("ageRating"))
+        print()
+        print("First programme")
+        print("----------------")
+        print("Channel :", p.channel)
+        print("Title   :", p.title)
+        print("Start   :", p.start)
+        print("Stop    :", p.stop)
+        print("Rating  :", p.rating)
 
 
 if __name__ == "__main__":
