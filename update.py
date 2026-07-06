@@ -2,9 +2,9 @@ import hashlib
 import subprocess
 import sys
 from pathlib import Path
-
 from src.main import main
 from src.version import VERSION
+from src.gitutils import git
 
 print(f"RunnTV Toolkit v{VERSION}")
 
@@ -43,10 +43,7 @@ HASH.write_text(new_hash)
 
 print("Changes detected.")
 
-subprocess.run(
-    ["git", "add", "output", "docs/output"],
-    check=True
-)
+git("add", "output", "docs/output")
 
 result = subprocess.run(
     ["git", "diff", "--cached", "--quiet"]
@@ -56,11 +53,8 @@ if result.returncode == 0:
     print("Nothing changed.")
     sys.exit(0)
 
-subprocess.run(
-    ["git", "commit", "-m", "Automatic EPG update"],
-    check=True
-)
+git("commit", "-m", "Automatic EPG update")
 
-subprocess.run(["git", "push"], check=True)
+git("push")
 
 print("GitHub updated.")
