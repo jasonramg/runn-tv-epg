@@ -43,7 +43,10 @@ HASH.write_text(new_hash)
 
 print("Changes detected.")
 
-subprocess.run(["git", "add", "output"], check=True)
+subprocess.run(
+    ["git", "add", "output", "docs/output"],
+    check=True
+)
 
 result = subprocess.run(
     ["git", "diff", "--cached", "--quiet"]
