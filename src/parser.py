@@ -1,25 +1,6 @@
-from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
 from lxml import etree
-
-
-@dataclass
-class Channel:
-    id: str
-    name: str
-    logo: str
-
-
-@dataclass
-class Programme:
-    channel: str
-    title: str
-    desc: str
-    language: str
-    rating: str
-    start: datetime
-    stop: datetime
-    icon: str
+from .models import Channel, Programme
 
 
 def parse(xml: bytes):
@@ -45,6 +26,7 @@ def parse(xml: bytes):
                 id=channel_id,
                 name=channel_name,
                 logo=logo,
+                play_url=item.findtext("playUrl", "")
             )
         )
 

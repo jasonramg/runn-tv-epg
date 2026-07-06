@@ -1,4 +1,5 @@
 from pathlib import Path
+import os
 from lxml import etree
 
 from .config import OUTPUT_XML
@@ -87,13 +88,15 @@ def write_xmltv(channels, programmes):
                 src=p.icon
             )
 
-    OUTPUT_XML.parent.mkdir(
-        exist_ok=True
-    )
+    OUTPUT_XML.parent.mkdir(exist_ok=True)
+
+    tmp = Path(str(OUTPUT_XML) + ".tmp")
 
     etree.ElementTree(tv).write(
-        OUTPUT_XML,
+        tmp,
         encoding="UTF-8",
         xml_declaration=True,
         pretty_print=True
     )
+
+    os.replace(tmp, OUTPUT_XML)
