@@ -29,3 +29,10 @@ jobs:
       - name: Test downloader
         run: |
           python -m src.main
+
+      - name: Upload response
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: api-response
+          path: response.bin

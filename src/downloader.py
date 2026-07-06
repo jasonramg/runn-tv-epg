@@ -82,13 +82,12 @@ class Downloader:
                 "Saved as response.json"
             )
 
-        if not content.lstrip().startswith(b"<?xml"):
-            with open("response.bin", "wb") as f:
-                f.write(content)
+        log.info("First 200 bytes of response:")
 
-            raise RuntimeError(
-                "Unknown response format. Saved as response.bin"
-            )
+        print(repr(content[:200]))
+
+        with open("response.bin", "wb") as f:
+            f.write(content)
 
         log.info(
             "Downloaded %.2f MB",
