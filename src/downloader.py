@@ -4,7 +4,7 @@ import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
-from .config import API_URL, TIMEOUT, USER_AGENT
+from .config import API_URL, TIMEOUT, USER_AGENT, DEBUG
 from .logger import log
 
 
@@ -49,17 +49,16 @@ class Downloader:
             timeout=TIMEOUT
         )
 
-        print("Final URL:", r.url)
-        print("Content-Type:", r.headers.get("Content-Type"))
-        print("Content-Length:", r.headers.get("Content-Length"))
-
-        # Add these lines
-        print("Server:", r.headers.get("Server"))
-        print("Via:", r.headers.get("Via"))
-        print("CF-Cache-Status:", r.headers.get("CF-Cache-Status"))
-        print("Age:", r.headers.get("Age"))
-        print("ETag:", r.headers.get("ETag"))
-        print("Last-Modified:", r.headers.get("Last-Modified"))
+        if DEBUG:
+            print("Final URL:", r.url)
+            print("Content-Type:", r.headers.get("Content-Type"))
+            print("Content-Length:", r.headers.get("Content-Length"))
+            print("Server:", r.headers.get("Server"))
+            print("Via:", r.headers.get("Via"))
+            print("CF-Cache-Status:", r.headers.get("CF-Cache-Status"))
+            print("Age:", r.headers.get("Age"))
+            print("ETag:", r.headers.get("ETag"))
+            print("Last-Modified:", r.headers.get("Last-Modified"))
 
         log.info("Status: %s", r.status_code)
 
@@ -94,12 +93,13 @@ class Downloader:
                 "Saved as response.json"
             )
 
-        log.info("First 200 bytes of response:")
+        if DEBUG:
+            log.info("First 200 bytes of response:")
+            print(repr(content[:200]))
 
-        print(repr(content[:200]))
-
-        with open("response.bin", "wb") as f:
-            f.write(content)
+        if DEBUG:
+            with open("response.bin", "wb") as f:
+                f.write(content)
 
         log.info(
             "Downloaded %.2f MB",

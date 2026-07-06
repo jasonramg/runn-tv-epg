@@ -1,6 +1,7 @@
 import json
 from datetime import datetime, timezone
 from pathlib import Path
+from .version import VERSION
 
 OUTPUT = Path("output/manifest.json")
 
@@ -9,7 +10,7 @@ def write_manifest(channels, programmes):
 
     manifest = {
         "generator": "RunnTV Toolkit",
-        "version": "1.1.0",
+        "version": VERSION,
         "generated": datetime.now(timezone.utc).isoformat(),
 
         "channels": len(channels),

@@ -4,6 +4,9 @@ import sys
 from pathlib import Path
 
 from src.main import main
+from src.version import VERSION
+
+print(f"RunnTV Toolkit v{VERSION}")
 
 XML = Path("output/epg.xml")
 HASH = Path("output/.epg.sha256")

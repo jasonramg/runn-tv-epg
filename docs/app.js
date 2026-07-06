@@ -1,17 +1,33 @@
 fetch("../output/manifest.json")
 
-.then(r=>r.json())
+.then(r => r.json())
 
-.then(m=>{
+.then(m => {
 
-document.getElementById("stats").innerHTML=`
+document.getElementById("channels").textContent =
+m.channels;
 
-<p><b>Channels:</b> ${m.channels}</p>
+document.getElementById("programmes").textContent =
+m.programmes;
 
-<p><b>Programmes:</b> ${m.programmes}</p>
+document.getElementById("updated").textContent =
+new Date(m.generated).toLocaleString();
 
-<p><b>Generated:</b> ${m.generated}</p>
+const downloads =
+document.getElementById("downloads");
 
-`;
+for(const [name,file] of Object.entries(m.downloads)){
+
+const a=document.createElement("a");
+
+a.className="download";
+
+a.href="../output/"+file;
+
+a.textContent="📥 "+file;
+
+downloads.appendChild(a);
+
+}
 
 });

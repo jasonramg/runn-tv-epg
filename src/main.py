@@ -14,8 +14,8 @@ def main():
 
     channels, programmes = parse(xml)
 
-    print(f"Channels   : {len(channels)}")
-    print(f"Programmes : {len(programmes)}")
+    log.info("Channels   : %d", len(channels))
+    log.info("Programmes : %d", len(programmes))
 
     write_xmltv(
         channels,

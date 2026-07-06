@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width,initial-scale=1">
 
 <title>RunnTV Toolkit</title>
 
@@ -12,27 +16,51 @@
 
 <body>
 
+<div class="container">
+
 <h1>📺 RunnTV Toolkit</h1>
 
-<div id="stats"></div>
+<p class="subtitle">
+Automatic XMLTV & Playlist Generator
+</p>
+
+<div class="cards">
+
+<div class="card">
+<div id="channels">--</div>
+<span>Channels</span>
+</div>
+
+<div class="card">
+<div id="programmes">--</div>
+<span>Programmes</span>
+</div>
+
+<div class="card">
+<div id="updated">--</div>
+<span>Generated</span>
+</div>
+
+</div>
 
 <h2>Downloads</h2>
 
-<ul>
+<div id="downloads"></div>
 
-<li><a href="../output/epg.xml">epg.xml</a></li>
+<footer>
 
-<li><a href="../output/epg.xml.gz">epg.xml.gz</a></li>
+<a href="https://github.com/jasonramg/runn-tv-epg">
 
-<li><a href="../output/playlist.m3u">playlist.m3u</a></li>
+GitHub Repository
 
-<li><a href="../output/channels.json">channels.json</a></li>
+</a>
 
-<li><a href="../output/stats.json">stats.json</a></li>
+</footer>
 
-</ul>
+</div>
 
 <script src="app.js"></script>
 
 </body>
+
 </html>
