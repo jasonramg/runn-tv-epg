@@ -937,15 +937,6 @@
     </rating>
     <icon src="https://dnuk7lvye3m03.cloudfront.net/runntv/platform/channels/ABPNEW/Web/coverart/72ebebf3-dcc3-496c-9665-f740cf5aa3cc.png"/>
   </programme>
-  <programme channel="gregld" start="20260707073047 +0000" stop="20260707080031 +0000">
-    <title lang="en">Mighty Raju Experiment Gone Wrong &amp; Angry Bird</title>
-    <desc lang="en">Swamy’s experiment creates monsters; Mighty Raju saves the lab and restores them.</desc>
-    <language>Hindi</language>
-    <rating>
-      <value>U - All Ages</value>
-    </rating>
-    <icon src="https://dnuk7lvye3m03.cloudfront.net/greengold/partners/GRNGLDTV/poster/web/cover/f424c640-f5a8-4a45-ab99-72053b67998f.png"/>
-  </programme>
   <programme channel="gregld" start="20260707080032 +0000" stop="20260707083011 +0000">
     <title lang="en">Luv Kushh Smoke Demon &amp; Snake Iland</title>
     <desc lang="en">Luv, Kush defeat smoke demon.</desc>
@@ -2192,6 +2183,15 @@
     </rating>
     <icon src="https://dnuk7lvye3m03.cloudfront.net/greengold/partners/GRNGLDTV/poster/web/cover/c8329d3d-96bb-42d6-89ac-0a8a0ceb5b85.png"/>
   </programme>
+  <programme channel="gregld" start="20260710075954 +0000" stop="20260710082933 +0000">
+    <title lang="en">Luv Kushh The Enchanted Dolls &amp; Magical Herb</title>
+    <desc lang="en">Luv, Kush stop enchanted dolls.</desc>
+    <language>Hindi</language>
+    <rating>
+      <value>U - All Ages</value>
+    </rating>
+    <icon src="https://dnuk7lvye3m03.cloudfront.net/greengold/partners/GRNGLDTV/poster/web/cover/5c4c47c5-c9cb-44df-bc69-da439c795f26.png"/>
+  </programme>
   <programme channel="9xjalw" start="20260707063000 +0000" stop="20260707083000 +0000">
     <title lang="en">Super Swag</title>
     <desc lang="en">Enjoy the most famous non film album song on 9X Jalwa. This song band will play various moods of non film songs.</desc>
@@ -3322,15 +3322,6 @@
     </rating>
     <icon src="https://dnuk7lvye3m03.cloudfront.net/runntv/partners/RUNN9XTV/poster/web/cover/234174c6-f084-4ba0-8d32-be8297483997.png"/>
   </programme>
-  <programme channel="dicmed" start="20260707073158 +0000" stop="20260707075536 +0000">
-    <title lang="en">The Breakdown</title>
-    <desc lang="en">While the team scrambles to fix minor app bugs, the real issues at Thoda Sukoon are swept under the rug — until it all explodes. An employee collapses from overwork, triggering a full-blown social media backlash. As tensions rise, Maya and Chirag are forced to face unresolved conflict, and the team must ask: how far is too far? Can this crisis spark real change in a toxic work culture, or is it already too late?</desc>
-    <language>Hindi</language>
-    <rating>
-      <value>U - All Ages</value>
-    </rating>
-    <icon src="https://dnuk7lvye3m03.cloudfront.net/pocketaces/platform/channels/DICMED/Web/coverart/7a64bd23-cd03-4eb3-843b-edd16ebb0936.png"/>
-  </programme>
   <programme channel="dicmed" start="20260707075537 +0000" stop="20260707082631 +0000">
     <title lang="en">The Cliffhanger</title>
     <desc lang="en">In the aftermath of Riddhi's collapse, Zooni spearheads a desperate negotiation for better working conditions. As a seemingly balanced work environment emerges, the team struggles to deliver, and blurred lines between professional and personal lives begin to fray. Are these simply growing pains for Thoda Sukoon, or are fresh, explosive complications on the horizon?</desc>
@@ -3802,6 +3793,15 @@
   <programme channel="dicmed" start="20260708090734 +0000" stop="20260708094523 +0000">
     <title lang="en">Here We Go Again</title>
     <desc lang="en">With the house now fully "merged," Anita (Eisha Chopra) and Nikhil (Veer Rajwant Singh) decide to throw a surprise anniversary party for the "Folks." While their intentions are pure, the episode explores how a "celebration" can quickly become a source of stress when dealing with a chronic illness and interfering relatives.</desc>
+    <language>Hindi</language>
+    <rating>
+      <value>U - All Ages</value>
+    </rating>
+    <icon src="https://dnuk7lvye3m03.cloudfront.net/pocketaces/platform/channels/DICMED/Web/coverart/7a64bd23-cd03-4eb3-843b-edd16ebb0936.png"/>
+  </programme>
+  <programme channel="dicmed" start="20260708094523 +0000" stop="20260708102257 +0000">
+    <title lang="en">Zor Se Bolo</title>
+    <desc lang="en">The episode revolves around a chaotic Sunday at the Solanki household. The central plot involves Kiran Solanki (Shishir Sharma) needing a hearing aid, but it quickly spirals into a larger commentary on how the family members are "deaf" to each other's actual needs and desires.</desc>
     <language>Hindi</language>
     <rating>
       <value>U - All Ages</value>
@@ -4667,41 +4667,14 @@ Raunak: A volatile but highly skilled "fragger." The task is harder than Arun an
     </rating>
     <icon src="https://dnuk7lvye3m03.cloudfront.net/pocketaces/platform/channels/DICMED/Web/coverart/7a64bd23-cd03-4eb3-843b-edd16ebb0936.png"/>
   </programme>
-  <programme channel="filcop" start="20260707074652 +0000" stop="20260707075341 +0000">
-    <title lang="en">Lockdown: Beginning Vs Now</title>
-    <desc lang="en">The shift from “I’ll be productive” optimism to pajama-all-day acceptance—lockdown fatigue captured hilariously.</desc>
+  <programme channel="dicmed" start="20260710074359 +0000" stop="20260710081247 +0000">
+    <title lang="en">Breach Of Contract</title>
+    <desc lang="en">Chasing a competitive business pitch to work for a coveted fashion firm, the sisters are again at different sides of a dilemma. The commitment to the new opportunity would be for a minimum two years, which Adhira is reluctant to make at the age of 25. Whereas Shagun, having already quit her high paying corporate job to join this business, sees no harm in seizing the opportunity with open arms. As their argument turns to a fight, we are left wondering if this is in fact the fight to end all fights. Will the sisters come to the same page and work for the pitch? Or will Happily Hitched disband for good?</desc>
     <language>Hindi</language>
     <rating>
       <value>U - All Ages</value>
     </rating>
-    <icon src="https://dnuk7lvye3m03.cloudfront.net/pocketaces/platform/channels/FLTRCOPY/Web/coverart/f9d498c1-46fd-4452-89e5-5ebe1ac6e912.png"/>
-  </programme>
-  <programme channel="filcop" start="20260707075342 +0000" stop="20260707075912 +0000">
-    <title lang="en">When Your Bff Is A Lifesaver</title>
-    <desc lang="en">When your best friend swoops in exactly when you need them: the back-up plan for when everything else fails, the one who holds the umbrella when you forgot yours.</desc>
-    <language>Hindi</language>
-    <rating>
-      <value>U - All Ages</value>
-    </rating>
-    <icon src="https://dnuk7lvye3m03.cloudfront.net/pocketaces/platform/channels/FLTRCOPY/Web/coverart/f9d498c1-46fd-4452-89e5-5ebe1ac6e912.png"/>
-  </programme>
-  <programme channel="filcop" start="20260707075912 +0000" stop="20260707080919 +0000">
-    <title lang="en">Holi Na Milegi Dobara</title>
-    <desc lang="en">The video humorously shows the excitement and chaos of celebrating Holi with friends. It highlights playful moments, colors, and the spirit of togetherness.</desc>
-    <language>Hindi</language>
-    <rating>
-      <value>U - All Ages</value>
-    </rating>
-    <icon src="https://dnuk7lvye3m03.cloudfront.net/pocketaces/platform/channels/FLTRCOPY/Web/coverart/f9d498c1-46fd-4452-89e5-5ebe1ac6e912.png"/>
-  </programme>
-  <programme channel="filcop" start="20260707080920 +0000" stop="20260707081420 +0000">
-    <title lang="en">Silly Things We Do Online</title>
-    <desc lang="en">From obsessive checking of notifications, posting for the ‘gram, to weird internal monologues while scrolling—this video holds a mirror to all the ridiculous (and somehow relatable) digital quirks we’ve got.</desc>
-    <language>Hindi</language>
-    <rating>
-      <value>U - All Ages</value>
-    </rating>
-    <icon src="https://dnuk7lvye3m03.cloudfront.net/pocketaces/platform/channels/FLTRCOPY/Web/coverart/f9d498c1-46fd-4452-89e5-5ebe1ac6e912.png"/>
+    <icon src="https://dnuk7lvye3m03.cloudfront.net/pocketaces/platform/channels/DICMED/Web/coverart/7a64bd23-cd03-4eb3-843b-edd16ebb0936.png"/>
   </programme>
   <programme channel="filcop" start="20260707081421 +0000" stop="20260707082218 +0000">
     <title lang="en">Awkward Situations With Mom</title>
@@ -10056,6 +10029,33 @@ Raunak: A volatile but highly skilled "fragger." The task is harder than Arun an
     </rating>
     <icon src="https://dnuk7lvye3m03.cloudfront.net/pocketaces/platform/channels/FLTRCOPY/Web/coverart/f9d498c1-46fd-4452-89e5-5ebe1ac6e912.png"/>
   </programme>
+  <programme channel="filcop" start="20260710060111 +0000" stop="20260710060827 +0000">
+    <title lang="en">Moving From A Small Town To A Big City</title>
+    <desc lang="en">A heartfelt story about chasing dreams, culture shock, loneliness, and finally finding your place in the chaos.</desc>
+    <language>Hindi</language>
+    <rating>
+      <value>U - All Ages</value>
+    </rating>
+    <icon src="https://dnuk7lvye3m03.cloudfront.net/pocketaces/platform/channels/FLTRCOPY/Web/coverart/f9d498c1-46fd-4452-89e5-5ebe1ac6e912.png"/>
+  </programme>
+  <programme channel="filcop" start="20260710060828 +0000" stop="20260710061529 +0000">
+    <title lang="en">If Your Life Were A Rajinikanth Movie</title>
+    <desc lang="en">Over-the-top drama, slow-mo entries, and impossible stunts—because life would be so much cooler with Rajini-style swag.</desc>
+    <language>Hindi</language>
+    <rating>
+      <value>U - All Ages</value>
+    </rating>
+    <icon src="https://dnuk7lvye3m03.cloudfront.net/pocketaces/platform/channels/FLTRCOPY/Web/coverart/f9d498c1-46fd-4452-89e5-5ebe1ac6e912.png"/>
+  </programme>
+  <programme channel="filcop" start="20260710061529 +0000" stop="20260710062148 +0000">
+    <title lang="en">School Lunch Breaks</title>
+    <desc lang="en">The video captures the chaos and excitement of school lunch breaks. It highlights the rush, the friendships, and the small adventures that make those moments memorable.</desc>
+    <language>Hindi</language>
+    <rating>
+      <value>U - All Ages</value>
+    </rating>
+    <icon src="https://dnuk7lvye3m03.cloudfront.net/pocketaces/platform/channels/FLTRCOPY/Web/coverart/f9d498c1-46fd-4452-89e5-5ebe1ac6e912.png"/>
+  </programme>
   <programme channel="shemaroo-bollywood" start="20260707053713 +0000" stop="20260707084925 +0000">
     <title lang="en">Hum Hain Rahi Pyar Ke</title>
     <desc lang="en">Ayesha writes a novel about her prostitution journey, trying to persuade sister Anu to let go of her past and start fresh.</desc>
@@ -13714,24 +13714,6 @@ nature snaps back.</desc>
       <value>A - 18+</value>
     </rating>
   </programme>
-  <programme channel="alrght" start="20260707073631 +0000" stop="20260707075511 +0000">
-    <title lang="en">The Sarkari Karyalay S2 Ep 05</title>
-    <desc lang="en">More office antics and exaggerated bureaucratic situations, as new characters add to the humor.</desc>
-    <language>Hindi</language>
-    <rating>
-      <value>UA-16+</value>
-    </rating>
-    <icon src="https://dnuk7lvye3m03.cloudfront.net/ruskmedia/partners/RUSKMDIA/poster/web/cover/1bc0f04f-cfd2-4bb1-a38b-81eb21ea6f18.png"/>
-  </programme>
-  <programme channel="alrght" start="20260707075512 +0000" stop="20260707081943 +0000">
-    <title lang="en">The Sarkari Karyalay S3 Ep 01</title>
-    <desc lang="en">The office humor reaches new heights with absurd office politics and misunderstandings.</desc>
-    <language>Hindi</language>
-    <rating>
-      <value>UA-16+</value>
-    </rating>
-    <icon src="https://dnuk7lvye3m03.cloudfront.net/ruskmedia/partners/RUSKMDIA/poster/web/cover/05380985-4c54-4499-9caf-f10baa7435c5.png"/>
-  </programme>
   <programme channel="alrght" start="20260707081943 +0000" stop="20260707084512 +0000">
     <title lang="en">The Sarkari Karyalay S3 Ep 02</title>
     <desc lang="en">The office humor reaches new heights with absurd office politics and misunderstandings.</desc>
@@ -13965,24 +13947,6 @@ nature snaps back.</desc>
       <value>UA-16+</value>
     </rating>
     <icon src="https://dnuk7lvye3m03.cloudfront.net/ruskmedia/partners/RUSKMDIA/poster/web/cover/eb0d2cb1-c951-4674-bdc1-bfe015437119.png"/>
-  </programme>
-  <programme channel="alrght" start="20260707155330 +0000" stop="20260707163646 +0000">
-    <title lang="en">Dude Ep 03</title>
-    <desc lang="en">Dude depicts the life of a detective, scrambling to hunt down the answers behind a baffling case. It reels him into twisted relationships filled with perplexing events. And the more he tries to untangle the truth, the more convoluted it becomes.</desc>
-    <language>Hindi</language>
-    <rating>
-      <value>UA-16+</value>
-    </rating>
-    <icon src="https://dnuk7lvye3m03.cloudfront.net/ruskmedia/partners/RUSKMDIA/poster/web/cover/4e679f4a-cbe8-4223-9725-c52b37934b45.png"/>
-  </programme>
-  <programme channel="alrght" start="20260707163647 +0000" stop="20260707171042 +0000">
-    <title lang="en">Dude Ep 04</title>
-    <desc lang="en">Dude depicts the life of a detective, scrambling to hunt down the answers behind a baffling case. It reels him into twisted relationships filled with perplexing events. And the more he tries to untangle the truth, the more convoluted it becomes.</desc>
-    <language>Hindi</language>
-    <rating>
-      <value>UA-16+</value>
-    </rating>
-    <icon src="https://dnuk7lvye3m03.cloudfront.net/ruskmedia/partners/RUSKMDIA/poster/web/cover/da0c1309-4903-4037-8ada-8336b1f50cea.png"/>
   </programme>
   <programme channel="alrght" start="20260707171042 +0000" stop="20260707181754 +0000">
     <title lang="en">Dude Ep 05</title>
@@ -14947,24 +14911,6 @@ nature snaps back.</desc>
     </rating>
     <icon src="https://dnuk7lvye3m03.cloudfront.net/ruskmedia/partners/RUSKMDIA/poster/web/cover/eb0d2cb1-c951-4674-bdc1-bfe015437119.png"/>
   </programme>
-  <programme channel="alrght" start="20260709001416 +0000" stop="20260709005732 +0000">
-    <title lang="en">Dude Ep 03</title>
-    <desc lang="en">Dude depicts the life of a detective, scrambling to hunt down the answers behind a baffling case. It reels him into twisted relationships filled with perplexing events. And the more he tries to untangle the truth, the more convoluted it becomes.</desc>
-    <language>Hindi</language>
-    <rating>
-      <value>UA-16+</value>
-    </rating>
-    <icon src="https://dnuk7lvye3m03.cloudfront.net/ruskmedia/partners/RUSKMDIA/poster/web/cover/4e679f4a-cbe8-4223-9725-c52b37934b45.png"/>
-  </programme>
-  <programme channel="alrght" start="20260709005733 +0000" stop="20260709013128 +0000">
-    <title lang="en">Dude Ep 04</title>
-    <desc lang="en">Dude depicts the life of a detective, scrambling to hunt down the answers behind a baffling case. It reels him into twisted relationships filled with perplexing events. And the more he tries to untangle the truth, the more convoluted it becomes.</desc>
-    <language>Hindi</language>
-    <rating>
-      <value>UA-16+</value>
-    </rating>
-    <icon src="https://dnuk7lvye3m03.cloudfront.net/ruskmedia/partners/RUSKMDIA/poster/web/cover/da0c1309-4903-4037-8ada-8336b1f50cea.png"/>
-  </programme>
   <programme channel="alrght" start="20260709013128 +0000" stop="20260709023840 +0000">
     <title lang="en">Dude Ep 05</title>
     <desc lang="en">Dude depicts the life of a detective, scrambling to hunt down the answers behind a baffling case. It reels him into twisted relationships filled with perplexing events. And the more he tries to untangle the truth, the more convoluted it becomes.</desc>
@@ -15918,6 +15864,15 @@ nature snaps back.</desc>
       <value>UA-16+</value>
     </rating>
     <icon src="https://dnuk7lvye3m03.cloudfront.net/ruskmedia/partners/RUSKMDIA/poster/web/cover/357e516a-2594-4a50-9647-e6b9915e6a43.png"/>
+  </programme>
+  <programme channel="alrght" start="20260710075127 +0000" stop="20260710083501 +0000">
+    <title lang="en">Dude Ep 02</title>
+    <desc lang="en">Dude depicts the life of a detective, scrambling to hunt down the answers behind a baffling case. It reels him into twisted relationships filled with perplexing events. And the more he tries to untangle the truth, the more convoluted it becomes.</desc>
+    <language>Hindi</language>
+    <rating>
+      <value>UA-16+</value>
+    </rating>
+    <icon src="https://dnuk7lvye3m03.cloudfront.net/ruskmedia/partners/RUSKMDIA/poster/web/cover/eb0d2cb1-c951-4674-bdc1-bfe015437119.png"/>
   </programme>
   <programme channel="lookid" start="20260707060000 +0000" stop="20260707100000 +0000">
     <title lang="en">Seriesabc -123!</title>
@@ -17088,15 +17043,6 @@ nature snaps back.</desc>
       <value>U - All Ages</value>
     </rating>
     <icon src="https://dnuk7lvye3m03.cloudfront.net/nhstdz/partners/NHBLYRAG/poster/web/cover/f0ec69f4-657a-456d-aef8-5f1fa124e49e.png"/>
-  </programme>
-  <programme channel="newnat" start="20260707073000 +0000" stop="20260707080000 +0000">
-    <title lang="en">Bulletin</title>
-    <desc lang="en">News of the day</desc>
-    <language>Hindi</language>
-    <rating>
-      <value>U - All Ages</value>
-    </rating>
-    <icon src="https://dnuk7lvye3m03.cloudfront.net/runntv/platform/channels/NEWNAT/Web/coverart/18ed2a73-0a4c-4f98-bf23-b636f523ef3f.png"/>
   </programme>
   <programme channel="newnat" start="20260707080000 +0000" stop="20260707083000 +0000">
     <title lang="en">Bulletin</title>
@@ -20242,51 +20188,6 @@ nature snaps back.</desc>
     </rating>
     <icon src="https://dnuk7lvye3m03.cloudfront.net/runntv/partners/INDIATV/poster/coverart_web.png"/>
   </programme>
-  <programme channel="shemaroo-filmigaane" start="20260707074506 +0000" stop="20260707075329 +0000">
-    <title lang="en">Saanson Ka Chalna Dil Ka Machalna</title>
-    <desc lang="en">Saanson Ka Chalna Dil Ka Machalna</desc>
-    <language>Hindi</language>
-    <rating>
-      <value>U - All Ages</value>
-    </rating>
-    <icon src="https://dnuk7lvye3m03.cloudfront.net/shemaroo/platform/channels/SMRFGN/Web/coverart/e7d304aa-4f09-435b-ae53-308f968bf19f.png"/>
-  </programme>
-  <programme channel="shemaroo-filmigaane" start="20260707075330 +0000" stop="20260707075959 +0000">
-    <title lang="en">Ek Naya Aasman Aa Gaye</title>
-    <desc lang="en">Ek Naya Aasman Aa Gaye</desc>
-    <language>Hindi</language>
-    <rating>
-      <value>U - All Ages</value>
-    </rating>
-    <icon src="https://dnuk7lvye3m03.cloudfront.net/shemaroo/platform/channels/SMRFGN/Web/coverart/e7d304aa-4f09-435b-ae53-308f968bf19f.png"/>
-  </programme>
-  <programme channel="shemaroo-filmigaane" start="20260707075959 +0000" stop="20260707080420 +0000">
-    <title lang="en">Chhammak Chhallo Zara Dhire Challo Zara Dhire</title>
-    <desc lang="en">Chhammak Chhallo Zara Dhire Challo Zara Dhire</desc>
-    <language>Hindi</language>
-    <rating>
-      <value>U - All Ages</value>
-    </rating>
-    <icon src="https://dnuk7lvye3m03.cloudfront.net/shemaroo/platform/channels/SMRFGN/Web/coverart/e7d304aa-4f09-435b-ae53-308f968bf19f.png"/>
-  </programme>
-  <programme channel="shemaroo-filmigaane" start="20260707080420 +0000" stop="20260707081221 +0000">
-    <title lang="en">Palkein Ho Khuli Ya Band Sanam Teri Tasveer Dikhai</title>
-    <desc lang="en">Palkein Ho Khuli Ya Band Sanam Teri Tasveer Dikhai</desc>
-    <language>Hindi</language>
-    <rating>
-      <value>U - All Ages</value>
-    </rating>
-    <icon src="https://dnuk7lvye3m03.cloudfront.net/shemaroo/platform/channels/SMRFGN/Web/coverart/e7d304aa-4f09-435b-ae53-308f968bf19f.png"/>
-  </programme>
-  <programme channel="shemaroo-filmigaane" start="20260707081221 +0000" stop="20260707081723 +0000">
-    <title lang="en">Kisi Din Banoongi Main Raja Ki Rani Zara Phir Se K</title>
-    <desc lang="en">Kisi Din Banoongi Main Raja Ki Rani Zara Phir Se K</desc>
-    <language>Hindi</language>
-    <rating>
-      <value>U - All Ages</value>
-    </rating>
-    <icon src="https://dnuk7lvye3m03.cloudfront.net/shemaroo/platform/channels/SMRFGN/Web/coverart/e7d304aa-4f09-435b-ae53-308f968bf19f.png"/>
-  </programme>
   <programme channel="shemaroo-filmigaane" start="20260707081723 +0000" stop="20260707082449 +0000">
     <title lang="en">O Jaan-E-Man Chehra Tera Jadoo O Koi Jadoo Dekha H</title>
     <desc lang="en">O Jaan-E-Man Chehra Tera Jadoo O Koi Jadoo Dekha H</desc>
@@ -20832,15 +20733,6 @@ nature snaps back.</desc>
   <programme channel="shemaroo-filmigaane" start="20260707133954 +0000" stop="20260707134627 +0000">
     <title lang="en">Mohabbat Ne Mohabbat Ko…hawa Keh Rahi Hai</title>
     <desc lang="en">Mohabbat Ne Mohabbat Ko…Hawa Keh Rahi Hai</desc>
-    <language>Hindi</language>
-    <rating>
-      <value>U - All Ages</value>
-    </rating>
-    <icon src="https://dnuk7lvye3m03.cloudfront.net/shemaroo/platform/channels/SMRFGN/Web/coverart/e7d304aa-4f09-435b-ae53-308f968bf19f.png"/>
-  </programme>
-  <programme channel="shemaroo-filmigaane" start="20260707134627 +0000" stop="20260707135123 +0000">
-    <title lang="en">Tere Pyar Ne Yeh Kya Kar Diya Bahekne Laga Deewana</title>
-    <desc lang="en">Tere Pyar Ne Yeh Kya Kar Diya Bahekne Laga Deewana</desc>
     <language>Hindi</language>
     <rating>
       <value>U - All Ages</value>
@@ -21843,15 +21735,6 @@ nature snaps back.</desc>
     </rating>
     <icon src="https://dnuk7lvye3m03.cloudfront.net/shemaroo/platform/channels/SMRFGN/Web/coverart/e7d304aa-4f09-435b-ae53-308f968bf19f.png"/>
   </programme>
-  <programme channel="shemaroo-filmigaane" start="20260708004546 +0000" stop="20260708005042 +0000">
-    <title lang="en">Tere Pyar Ne Yeh Kya Kar Diya Bahekne Laga Deewana</title>
-    <desc lang="en">Tere Pyar Ne Yeh Kya Kar Diya Bahekne Laga Deewana</desc>
-    <language>Hindi</language>
-    <rating>
-      <value>U - All Ages</value>
-    </rating>
-    <icon src="https://dnuk7lvye3m03.cloudfront.net/shemaroo/platform/channels/SMRFGN/Web/coverart/e7d304aa-4f09-435b-ae53-308f968bf19f.png"/>
-  </programme>
   <programme channel="shemaroo-filmigaane" start="20260708005042 +0000" stop="20260708005716 +0000">
     <title lang="en">Nasha Yeh Pyar Ka Nasha Hai Yeh Meri Baat Yaron</title>
     <desc lang="en">Nasha Yeh Pyar Ka Nasha Hai Yeh Meri Baat Yaron</desc>
@@ -21945,15 +21828,6 @@ nature snaps back.</desc>
   <programme channel="shemaroo-filmigaane" start="20260708015118 +0000" stop="20260708015952 +0000">
     <title lang="en">Ek Naya Aasman Aa Gaye</title>
     <desc lang="en">Ek Naya Aasman Aa Gaye</desc>
-    <language>Hindi</language>
-    <rating>
-      <value>U - All Ages</value>
-    </rating>
-    <icon src="https://dnuk7lvye3m03.cloudfront.net/shemaroo/platform/channels/SMRFGN/Web/coverart/e7d304aa-4f09-435b-ae53-308f968bf19f.png"/>
-  </programme>
-  <programme channel="shemaroo-filmigaane" start="20260708015952 +0000" stop="20260708020413 +0000">
-    <title lang="en">Chhammak Chhallo Zara Dhire Challo Zara Dhire</title>
-    <desc lang="en">Chhammak Chhallo Zara Dhire Challo Zara Dhire</desc>
     <language>Hindi</language>
     <rating>
       <value>U - All Ages</value>
@@ -22184,15 +22058,6 @@ nature snaps back.</desc>
     </rating>
     <icon src="https://dnuk7lvye3m03.cloudfront.net/shemaroo/platform/channels/SMRFGN/Web/coverart/e7d304aa-4f09-435b-ae53-308f968bf19f.png"/>
   </programme>
-  <programme channel="shemaroo-filmigaane" start="20260708043538 +0000" stop="20260708043919 +0000">
-    <title lang="en">Jinke Aage Ji Jinke Peechhe Ji Jinke Aage Peechhe</title>
-    <desc lang="en">Jinke Aage Ji Jinke Peechhe Ji Jinke Aage Peechhe</desc>
-    <language>Hindi</language>
-    <rating>
-      <value>U - All Ages</value>
-    </rating>
-    <icon src="https://dnuk7lvye3m03.cloudfront.net/shemaroo/platform/channels/SMRFGN/Web/coverart/e7d304aa-4f09-435b-ae53-308f968bf19f.png"/>
-  </programme>
   <programme channel="shemaroo-filmigaane" start="20260708043919 +0000" stop="20260708044918 +0000">
     <title lang="en">Baandh Lo Ghoonghroo Nacho Sanam Sargam Ban Jaye D</title>
     <desc lang="en">Baandh Lo Ghoonghroo Nacho Sanam Sargam Ban Jaye D</desc>
@@ -22331,14 +22196,6 @@ nature snaps back.</desc>
   <programme channel="shemaroo-filmigaane" start="20260708061054 +0000" stop="20260708061456 +0000">
     <title lang="en">Tinak Tin Tana Woh Dhun To Bajana Dhinak Dhin</title>
     <desc lang="en">Tinak Tin Tana Woh Dhun To Bajana Dhinak Dhin</desc>
-    <language>Hindi</language>
-    <rating>
-      <value>U - All Ages</value>
-    </rating>
-    <icon src="https://dnuk7lvye3m03.cloudfront.net/shemaroo/platform/channels/SMRFGN/Web/coverart/e7d304aa-4f09-435b-ae53-308f968bf19f.png"/>
-  </programme>
-  <programme channel="shemaroo-filmigaane" start="20260708061456 +0000" stop="20260708061917 +0000">
-    <title lang="en">Pyar Ishq Aur Mohabbat Jo Bhi Inka Naam Le</title>
     <language>Hindi</language>
     <rating>
       <value>U - All Ages</value>
@@ -22635,15 +22492,6 @@ nature snaps back.</desc>
   <programme channel="shemaroo-filmigaane" start="20260708092821 +0000" stop="20260708093310 +0000">
     <title lang="en">Ek Dil Hai…main Tut Ke Sanam…tujhe Pyar Se Dekhnew</title>
     <desc lang="en">Ek Dil Hai…Main Tut Ke Sanam…Tujhe Pyar Se Dekhnew</desc>
-    <language>Hindi</language>
-    <rating>
-      <value>U - All Ages</value>
-    </rating>
-    <icon src="https://dnuk7lvye3m03.cloudfront.net/shemaroo/platform/channels/SMRFGN/Web/coverart/e7d304aa-4f09-435b-ae53-308f968bf19f.png"/>
-  </programme>
-  <programme channel="shemaroo-filmigaane" start="20260708093310 +0000" stop="20260708093917 +0000">
-    <title lang="en">Tu Dharti Pe Chahe Jahan Bhi Rahegi</title>
-    <desc lang="en">Tu Dharti Pe Chahe Jahan Bhi Rahegi</desc>
     <language>Hindi</language>
     <rating>
       <value>U - All Ages</value>
@@ -23119,15 +22967,6 @@ nature snaps back.</desc>
     </rating>
     <icon src="https://dnuk7lvye3m03.cloudfront.net/shemaroo/platform/channels/SMRFGN/Web/coverart/e7d304aa-4f09-435b-ae53-308f968bf19f.png"/>
   </programme>
-  <programme channel="shemaroo-filmigaane" start="20260708144022 +0000" stop="20260708144715 +0000">
-    <title lang="en">Yeh Samaa Samaa Hai</title>
-    <desc lang="en">Yeh Samaa Samaa Hai</desc>
-    <language>Hindi</language>
-    <rating>
-      <value>U - All Ages</value>
-    </rating>
-    <icon src="https://dnuk7lvye3m03.cloudfront.net/shemaroo/platform/channels/SMRFGN/Web/coverart/e7d304aa-4f09-435b-ae53-308f968bf19f.png"/>
-  </programme>
   <programme channel="shemaroo-filmigaane" start="20260708144715 +0000" stop="20260708145109 +0000">
     <title lang="en">Unse Mili Nazar Ke Mere Hosh Ud Gaye Aisa Hua Asar</title>
     <desc lang="en">Unse Mili Nazar Ke Mere Hosh Ud Gaye Aisa Hua Asar</desc>
@@ -23345,15 +23184,6 @@ nature snaps back.</desc>
   <programme channel="shemaroo-filmigaane" start="20260708173510 +0000" stop="20260708174036 +0000">
     <title lang="en">Je Hum Tum Chori Se Bandhe Ek Dori Se Jaiyo</title>
     <desc lang="en">Je Hum Tum Chori Se Bandhe Ek Dori Se Jaiyo</desc>
-    <language>Hindi</language>
-    <rating>
-      <value>U - All Ages</value>
-    </rating>
-    <icon src="https://dnuk7lvye3m03.cloudfront.net/shemaroo/platform/channels/SMRFGN/Web/coverart/e7d304aa-4f09-435b-ae53-308f968bf19f.png"/>
-  </programme>
-  <programme channel="shemaroo-filmigaane" start="20260708174036 +0000" stop="20260708174729 +0000">
-    <title lang="en">Yeh Samaa Samaa Hai</title>
-    <desc lang="en">Yeh Samaa Samaa Hai</desc>
     <language>Hindi</language>
     <rating>
       <value>U - All Ages</value>
@@ -23851,15 +23681,6 @@ nature snaps back.</desc>
     </rating>
     <icon src="https://dnuk7lvye3m03.cloudfront.net/shemaroo/platform/channels/SMRFGN/Web/coverart/e7d304aa-4f09-435b-ae53-308f968bf19f.png"/>
   </programme>
-  <programme channel="shemaroo-filmigaane" start="20260708233429 +0000" stop="20260708234036 +0000">
-    <title lang="en">Tu Dharti Pe Chahe Jahan Bhi Rahegi</title>
-    <desc lang="en">Tu Dharti Pe Chahe Jahan Bhi Rahegi</desc>
-    <language>Hindi</language>
-    <rating>
-      <value>U - All Ages</value>
-    </rating>
-    <icon src="https://dnuk7lvye3m03.cloudfront.net/shemaroo/platform/channels/SMRFGN/Web/coverart/e7d304aa-4f09-435b-ae53-308f968bf19f.png"/>
-  </programme>
   <programme channel="shemaroo-filmigaane" start="20260708234036 +0000" stop="20260708234753 +0000">
     <title lang="en">Nazrein Mili Dil Dhadka Meri Dhadkan Ne Kaha Love</title>
     <desc lang="en">Nazrein Mili Dil Dhadka Meri Dhadkan Ne Kaha Love</desc>
@@ -24122,15 +23943,6 @@ nature snaps back.</desc>
   <programme channel="shemaroo-filmigaane" start="20260709023039 +0000" stop="20260709023614 +0000">
     <title lang="en">East Or West India Is The Best</title>
     <desc lang="en">East Or West India Is The Best</desc>
-    <language>Hindi</language>
-    <rating>
-      <value>U - All Ages</value>
-    </rating>
-    <icon src="https://dnuk7lvye3m03.cloudfront.net/shemaroo/platform/channels/SMRFGN/Web/coverart/e7d304aa-4f09-435b-ae53-308f968bf19f.png"/>
-  </programme>
-  <programme channel="shemaroo-filmigaane" start="20260709023615 +0000" stop="20260709023956 +0000">
-    <title lang="en">Jinke Aage Ji Jinke Peechhe Ji Jinke Aage Peechhe</title>
-    <desc lang="en">Jinke Aage Ji Jinke Peechhe Ji Jinke Aage Peechhe</desc>
     <language>Hindi</language>
     <rating>
       <value>U - All Ages</value>
@@ -24817,15 +24629,6 @@ nature snaps back.</desc>
     </rating>
     <icon src="https://dnuk7lvye3m03.cloudfront.net/shemaroo/platform/channels/SMRFGN/Web/coverart/e7d304aa-4f09-435b-ae53-308f968bf19f.png"/>
   </programme>
-  <programme channel="shemaroo-filmigaane" start="20260709100811 +0000" stop="20260709101623 +0000">
-    <title lang="en">Tu Dharti Pe Chahe Jahan Bhi Rahegi</title>
-    <desc lang="en">Tu Dharti Pe Chahe Jahan Bhi Rahegi</desc>
-    <language>Hindi</language>
-    <rating>
-      <value>U - All Ages</value>
-    </rating>
-    <icon src="https://dnuk7lvye3m03.cloudfront.net/shemaroo/platform/channels/SMRFGN/Web/coverart/e7d304aa-4f09-435b-ae53-308f968bf19f.png"/>
-  </programme>
   <programme channel="shemaroo-filmigaane" start="20260709101623 +0000" stop="20260709102134 +0000">
     <title lang="en">Deewana Hua Main Deewana Meri Jaan Tere Ishq Mein</title>
     <desc lang="en">Deewana Hua Main Deewana Meri Jaan Tere Ishq Mein</desc>
@@ -25393,15 +25196,6 @@ nature snaps back.</desc>
   <programme channel="shemaroo-filmigaane" start="20260709155923 +0000" stop="20260709160735 +0000">
     <title lang="en">Tan Tana Tan Tan Tan Tara Chalti Hai Kya</title>
     <desc lang="en">Tan Tana Tan Tan Tan Tara Chalti Hai Kya</desc>
-    <language>Hindi</language>
-    <rating>
-      <value>U - All Ages</value>
-    </rating>
-    <icon src="https://dnuk7lvye3m03.cloudfront.net/shemaroo/platform/channels/SMRFGN/Web/coverart/e7d304aa-4f09-435b-ae53-308f968bf19f.png"/>
-  </programme>
-  <programme channel="shemaroo-filmigaane" start="20260709160736 +0000" stop="20260709161343 +0000">
-    <title lang="en">Tu Dharti Pe Chahe Jahan Bhi Rahegi</title>
-    <desc lang="en">Tu Dharti Pe Chahe Jahan Bhi Rahegi</desc>
     <language>Hindi</language>
     <rating>
       <value>U - All Ages</value>
@@ -26343,15 +26137,6 @@ nature snaps back.</desc>
       <value>UA-13+</value>
     </rating>
     <icon src="https://dnuk7lvye3m03.cloudfront.net/runntv/platform/channels/SAGMUS/Web/coverart/de332a7e-4977-4858-842c-806246bb68da.png"/>
-  </programme>
-  <programme channel="spdnws" start="20260707073000 +0000" stop="20260707080000 +0000">
-    <title lang="en">Speed 50</title>
-    <desc lang="en">Speed 50</desc>
-    <language>Hindi</language>
-    <rating>
-      <value>U - All Ages</value>
-    </rating>
-    <icon src="https://dnuk7lvye3m03.cloudfront.net/runntv/platform/channels/SPDNWS/Web/coverart/b519e3b8-1756-460e-91f8-7d68b950bfd4.png"/>
   </programme>
   <programme channel="spdnws" start="20260707080000 +0000" stop="20260707083000 +0000">
     <title lang="en">Duniya 20</title>
@@ -28243,15 +28028,6 @@ nature snaps back.</desc>
     </rating>
     <icon src="https://dnuk7lvye3m03.cloudfront.net/runntv/partners/PITARATV/poster/web/cover/d0f6d974-63b3-4652-b593-b959c934ec67.png"/>
   </programme>
-  <programme channel="apkadt" start="20260707070000 +0000" stop="20260707081500 +0000">
-    <title lang="en">Best Of Aap Ki Adalat</title>
-    <desc lang="en">Best of Aap ki Adalat</desc>
-    <language>Hindi</language>
-    <rating>
-      <value>U - All Ages</value>
-    </rating>
-    <icon src="https://dnuk7lvye3m03.cloudfront.net/runntv/platform/channels/APKADT/Web/coverart/5b4038b3-7c54-4cab-b6c6-dd3d90445ecb.png"/>
-  </programme>
   <programme channel="apkadt" start="20260707081500 +0000" stop="20260707093000 +0000">
     <title lang="en">Best Of Aap Ki Adalat</title>
     <desc lang="en">Best of Aap ki Adalat</desc>
@@ -28827,14 +28603,6 @@ nature snaps back.</desc>
       <value>U - All Ages</value>
     </rating>
     <icon src="https://dnuk7lvye3m03.cloudfront.net/runntv/platform/channels/APKADT/Web/coverart/5b4038b3-7c54-4cab-b6c6-dd3d90445ecb.png"/>
-  </programme>
-  <programme channel="p_pktflm" start="20260707074324 +0000" stop="20260707075601 +0000">
-    <title lang="en">Uljhan</title>
-    <desc lang="en">After an unresolved breakup, Kartik and Ishita reunite for one last conversation. As memories resurface, so do the feelings. But closure doesn’t always mean getting back together. Uljhan is a tender tale of emotional maturity, heartbreak, and growth.</desc>
-    <language>Hindi</language>
-    <rating>
-      <value>UA-13+</value>
-    </rating>
   </programme>
   <programme channel="p_pktflm" start="20260707075602 +0000" stop="20260707085456 +0000">
     <title lang="en">Parinay</title>
@@ -31870,15 +31638,6 @@ How many of us are guilty of forgiving our partners once too often for their hur
       <value>U - All Ages</value>
     </rating>
   </programme>
-  <programme channel="indtvy" start="20260707075200 +0000" stop="20260707075400 +0000">
-    <title lang="en">Break</title>
-    <desc lang="en">Break</desc>
-    <language>Hindi</language>
-    <rating>
-      <value>U - All Ages</value>
-    </rating>
-    <icon src="https://dnuk7lvye3m03.cloudfront.net/runntv/platform/channels/INDTVY/Web/coverart/af25d10b-a3db-471a-a64c-df4ecba29af1.png"/>
-  </programme>
   <programme channel="indtvy" start="20260707075400 +0000" stop="20260707082200 +0000">
     <title lang="en">Yog Mantra</title>
     <desc lang="en">Yog Mantra</desc>
@@ -33445,14 +33204,6 @@ How many of us are guilty of forgiving our partners once too often for their hur
     </rating>
     <icon src="https://dnuk7lvye3m03.cloudfront.net/runntv/platform/channels/INDTVY/Web/coverart/af25d10b-a3db-471a-a64c-df4ecba29af1.png"/>
   </programme>
-  <programme channel="abpmaj" start="20260707075000 +0000" stop="20260707081500 +0000">
-    <title lang="en">Majha Doctor</title>
-    <desc lang="en">Majha Doctor</desc>
-    <language>Marathi</language>
-    <rating>
-      <value>U - All Ages</value>
-    </rating>
-  </programme>
   <programme channel="abpmaj" start="20260707081500 +0000" stop="20260707082800 +0000">
     <title lang="en">Duparchya Batmya</title>
     <desc lang="en">An afternoon special segment delivers the latest and most significant happenings of the day.</desc>
@@ -34965,14 +34716,6 @@ How many of us are guilty of forgiving our partners once too often for their hur
       <value>U - All Ages</value>
     </rating>
   </programme>
-  <programme channel="abpasm" start="20260707073000 +0000" stop="20260707080000 +0000">
-    <title lang="en">Asmita News</title>
-    <desc lang="en">News of the country, abroad and Gujarat.</desc>
-    <language>Gujarati</language>
-    <rating>
-      <value>U - All Ages</value>
-    </rating>
-  </programme>
   <programme channel="abpasm" start="20260707080000 +0000" stop="20260707083000 +0000">
     <title lang="en">Fatafat</title>
     <desc lang="en">Each news in 11 seconds in "fatafat" format / fast bulletin format.</desc>
@@ -36292,15 +36035,6 @@ How many of us are guilty of forgiving our partners once too often for their hur
     <rating>
       <value>U - All Ages</value>
     </rating>
-  </programme>
-  <programme channel="abpana" start="20260707073000 +0000" stop="20260707080000 +0000">
-    <title lang="en">Ground Zero</title>
-    <desc lang="en">GROUND ZERO</desc>
-    <language>Bengali</language>
-    <rating>
-      <value>U - All Ages</value>
-    </rating>
-    <icon src="https://dnuk7lvye3m03.cloudfront.net/runntv/platform/channels/ABPANA/Web/coverart/7ccb000d-53ec-4457-8a73-c01763d8e3f0.png"/>
   </programme>
   <programme channel="abpana" start="20260707080000 +0000" stop="20260707083000 +0000">
     <title lang="en">Ananda News</title>
@@ -37930,15 +37664,6 @@ How many of us are guilty of forgiving our partners once too often for their hur
       <value>U - All Ages</value>
     </rating>
     <icon src="https://dnuk7lvye3m03.cloudfront.net/runntv/platform/channels/ABPANA/Web/coverart/7ccb000d-53ec-4457-8a73-c01763d8e3f0.png"/>
-  </programme>
-  <programme channel="nnatuk" start="20260707073000 +0000" stop="20260707080000 +0000">
-    <title lang="en">Pahad Samachar</title>
-    <desc lang="en">News of the state of Uttarkhand</desc>
-    <language>Hindi</language>
-    <rating>
-      <value>U - All Ages</value>
-    </rating>
-    <icon src="https://dnuk7lvye3m03.cloudfront.net/runntv/platform/channels/NNATUK/Web/coverart/cccfb71c-77b4-4eb3-a31e-8cdf1f49d426.jpg"/>
   </programme>
   <programme channel="nnatuk" start="20260707080000 +0000" stop="20260707083000 +0000">
     <title lang="en">Speed News</title>
@@ -39901,15 +39626,6 @@ How many of us are guilty of forgiving our partners once too often for their hur
       <value>UA-13+</value>
     </rating>
     <icon src="https://dnuk7lvye3m03.cloudfront.net/runntv/platform/channels/SAGHAR/Web/coverart/290730df-6c1d-441e-a652-2f99fe2e3905.png"/>
-  </programme>
-  <programme channel="sikrat" start="20260707071000 +0000" stop="20260707081000 +0000">
-    <title lang="en">Shabad Kirtan Darbar</title>
-    <desc lang="en">The Shabad Kirtan can be listened to silently or sung along with the gathered Sangat</desc>
-    <language>Punjabi</language>
-    <rating>
-      <value>U - All Ages</value>
-    </rating>
-    <icon src="https://dnuk7lvye3m03.cloudfront.net/runntv/platform/channels/SIKRAT/Web/coverart/68a92640-cdc5-4f88-86f4-d1c32c38206e.png"/>
   </programme>
   <programme channel="sikrat" start="20260707081000 +0000" stop="20260707085500 +0000">
     <title lang="en">Aao Sangat Kriye</title>
@@ -43862,15 +43578,6 @@ Through gripping dramatization and Ronit Roy’s commanding narration, the serie
     </rating>
     <icon src="https://dnuk7lvye3m03.cloudfront.net/runntv/platform/channels/N18IND/Web/coverart/1d097407-c31e-490c-a6b5-45e9e64bf7eb.png"/>
   </programme>
-  <programme channel="n18pbhr" start="20260707073000 +0000" stop="20260707080000 +0000">
-    <title lang="en">Khabran Punjab Toh</title>
-    <desc lang="en">PUNJABI REGIONA...</desc>
-    <language>Punjabi</language>
-    <rating>
-      <value>U - All Ages</value>
-    </rating>
-    <icon src="https://dnuk7lvye3m03.cloudfront.net/runntv/platform/channels/N18PBHR/Web/coverart/458058bf-ecfe-4288-8e5f-5c3ae25700ef.png"/>
-  </programme>
   <programme channel="n18pbhr" start="20260707080000 +0000" stop="20260707083000 +0000">
     <title lang="en">Direct Distric Ton</title>
     <desc lang="en">6.30PM</desc>
@@ -45284,15 +44991,6 @@ Through gripping dramatization and Ronit Roy’s commanding narration, the serie
     </rating>
     <icon src="https://dnuk7lvye3m03.cloudfront.net/runntv/platform/channels/N18PBHR/Web/coverart/458058bf-ecfe-4288-8e5f-5c3ae25700ef.png"/>
   </programme>
-  <programme channel="n18cnn" start="20260707073000 +0000" stop="20260707080000 +0000">
-    <title lang="en">Breaking Frontline</title>
-    <desc lang="en">BREAKING FRONTLINE</desc>
-    <language>English</language>
-    <rating>
-      <value>U - All Ages</value>
-    </rating>
-    <icon src="https://dnuk7lvye3m03.cloudfront.net/runntv/platform/channels/N18CNN/Web/coverart/0927c981-c124-4022-abbf-05434c32f9dc.png"/>
-  </programme>
   <programme channel="n18cnn" start="20260707080000 +0000" stop="20260707083000 +0000">
     <title lang="en">Simply South</title>
     <desc lang="en">All the news from down South</desc>
@@ -46165,15 +45863,6 @@ Through gripping dramatization and Ronit Roy’s commanding narration, the serie
       <value>U - All Ages</value>
     </rating>
     <icon src="https://dnuk7lvye3m03.cloudfront.net/runntv/platform/channels/N18CNN/Web/coverart/0927c981-c124-4022-abbf-05434c32f9dc.png"/>
-  </programme>
-  <programme channel="nnbrjh" start="20260707073000 +0000" stop="20260707080000 +0000">
-    <title lang="en">News State Bihar Jharkhand News</title>
-    <desc lang="en">News segment focusing on urban &amp; rural areas, covering highlights from various districts across the state</desc>
-    <language>Hindi</language>
-    <rating>
-      <value>U - All Ages</value>
-    </rating>
-    <icon src="https://dnuk7lvye3m03.cloudfront.net/runntv/platform/channels/NNBRJH/Web/coverart/709f080c-0bbb-4a38-8c54-acacecdd9c7b.png"/>
   </programme>
   <programme channel="nnbrjh" start="20260707080000 +0000" stop="20260707083000 +0000">
     <title lang="en">State Special-Live</title>
@@ -47659,15 +47348,6 @@ Through gripping dramatization and Ronit Roy’s commanding narration, the serie
       <value>U - All Ages</value>
     </rating>
     <icon src="https://dnuk7lvye3m03.cloudfront.net/runntv/platform/channels/NNBRJH/Web/coverart/709f080c-0bbb-4a38-8c54-acacecdd9c7b.png"/>
-  </programme>
-  <programme channel="nnmpcg" start="20260707073000 +0000" stop="20260707080000 +0000">
-    <title lang="en">Dophar Superfast</title>
-    <desc lang="en">Fast news segment focusing on urban &amp; rural areas, covering highlights from various districts across the state</desc>
-    <language>Hindi</language>
-    <rating>
-      <value>U - All Ages</value>
-    </rating>
-    <icon src="https://dnuk7lvye3m03.cloudfront.net/runntv/platform/channels/NNMPCG/Web/coverart/8c433562-cf46-42e9-a073-b3975fadf0e7.png"/>
   </programme>
   <programme channel="nnmpcg" start="20260707080000 +0000" stop="20260707083000 +0000">
     <title lang="en">Aap Ke Mude</title>
