@@ -35,9 +35,30 @@ class Downloader:
 
         self.session.headers.update({
             "User-Agent": USER_AGENT,
-            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+
             "Accept-Language": "en-IN,en;q=0.5",
+
             "Upgrade-Insecure-Requests": "1",
+
+            "Sec-Fetch-Dest": "document",
+
+            "Sec-Fetch-Mode": "navigate",
+
+            "Sec-Fetch-Site": "none",
+
+            "Sec-Fetch-User": "?1",
+
+            "Sec-GPC": "1",
+
+            "Priority": "u=0, i",
+
+            "sec-ch-ua": '"Not;A=Brand";v="8", "Chromium";v="150", "Google Chrome";v="150"',
+
+            "sec-ch-ua-mobile": "?0",
+
+            "sec-ch-ua-platform": '"Windows"',
         })
 
     def download(self) -> bytes:
@@ -48,6 +69,10 @@ class Downloader:
             API_URL,
             timeout=TIMEOUT
         )
+
+        log.info("Request headers:")
+        for k, v in self.session.headers.items():
+            log.info("%s: %s", k, v)
 
         if DEBUG:
             print("Final URL:", r.url)
