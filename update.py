@@ -33,7 +33,12 @@ def sha256(path):
 log.info("Generating EPG...")
 
 try:
-    main()
+    result = main()
+
+    is_full_update = (
+        result["downloaded_channels"] >=
+        result["final_channels"]
+    )
 
 except KeyboardInterrupt:
     print("\nBuild cancelled by user.")
@@ -80,9 +85,16 @@ try:
 
 except Exception:
 
-    log.warning(
-        "Push rejected because the repository changed. "
-        "Skipping this run."
-    )
+    if not is_full_update:
 
-    sys.exit(0)
+        log.warning(
+            "Push rejected after partial update. "
+            "Skipping."
+        )
+        sys.exit(0)
+
+    log.warning(
+        "Push rejected after full update. "
+        "Please rerun update.py."
+    )
+    sys.exit(1)

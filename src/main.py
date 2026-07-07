@@ -41,7 +41,7 @@ def main():
             for c in old_channels
         }
 
-        if new_ids < old_ids:
+        if len(new_ids) < len(old_ids) and new_ids.issubset(old_ids):
 
             log.info(
                 "Partial EPG detected (%d/%d channels). Merging...",
@@ -94,6 +94,13 @@ def main():
     log.info("stats.json written.")
     log.info("manifest.json written.")
     log.info("Build completed successfully.")
+
+    return {
+        "downloaded_channels": downloaded_channel_count,
+        "downloaded_programmes": downloaded_programme_count,
+        "final_channels": len(channels),
+        "final_programmes": len(programmes),
+    }
 
 
 if __name__ == "__main__":

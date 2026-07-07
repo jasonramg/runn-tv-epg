@@ -15,5 +15,3 @@ USER_AGENT = (
 )
 
 DEBUG = False
-
-EXPECTED_CHANNELS = 84
