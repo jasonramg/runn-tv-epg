@@ -147,7 +147,7 @@ https://n18syndication-runn-tv.akamaized.net/bpk-tv/News18_Bangla_NW18_MOB/outpu
 https://n18syndication-runn-tv.akamaized.net/bpk-tv/News18_India_NW18_MOB/output01/index.m3u8
 
 #EXTINF:-1 tvg-id="n18mpcg" tvg-name="News18 Madhya Pradesh / Chhattisgarh" tvg-logo="https://dnuk7lvye3m03.cloudfront.net/runntv/platform/channels/N18MPCG/Web/thumbnail/8b278bd1-fb17-4c21-b6ba-cf29fa28f791.png" group-title="Entertainment",News18 Madhya Pradesh / Chhattisgarh
- https://n18syndication-runn-tv.akamaized.net/bpk-tv/News18_MP_Chhattisgarh_NW18_MOB/output01/index.m3u8
+https://n18syndication-runn-tv.akamaized.net/bpk-tv/News18_MP_Chhattisgarh_NW18_MOB/output01/index.m3u8
 
 #EXTINF:-1 tvg-id="n18mrt" tvg-name="News18 Marathi" tvg-logo="https://dnuk7lvye3m03.cloudfront.net/runntv/platform/channels/N18MRT/Web/thumbnail/14b8f100-7b23-4b42-b54c-9fa5ee7de0e2.png" group-title="Entertainment",News18 Marathi
 https://n18syndication-runn-tv.akamaized.net/bpk-tv/News18_Lokmat_NW18_MOB/output01/index.m3u8
