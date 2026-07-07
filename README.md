@@ -1,8 +1,15 @@
 # 📺 RunnTV EPG Toolkit
 
-An automatic **XMLTV** and **M3U playlist** generator for **RunnTV**.
+![Python](https://img.shields.io/badge/Python-3.12+-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
+![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-success)
+![XMLTV](https://img.shields.io/badge/XMLTV-Compatible-orange)
 
-The toolkit downloads the latest RunnTV EPG, converts it into XMLTV format, generates a compatible M3U playlist, and publishes everything to GitHub.
+An automatic **XMLTV**, **M3U**, and **channel metadata** generator for **RunnTV**.
+
+The toolkit downloads the latest RunnTV EPG, generates XMLTV, M3U playlists, channel metadata, and automatically publishes everything to GitHub Pages.
+
+It supports both **full** and **partial** API responses by automatically merging data from previous builds.
 
 ---
 
@@ -10,13 +17,46 @@ The toolkit downloads the latest RunnTV EPG, converts it into XMLTV format, gene
 
 - ✅ XMLTV (`epg.xml`)
 - ✅ Compressed XMLTV (`epg.xml.gz`)
-- ✅ M3U Playlist (`playlist.m3u`)
+- ✅ IPTV Playlist (`playlist.m3u`)
 - ✅ Channel catalog (`channels.json`)
 - ✅ Build statistics (`stats.json`)
 - ✅ Build manifest (`manifest.json`)
 - ✅ Automatic Git publishing
+- ✅ GitHub Pages dashboard
 - ✅ Android (Termux) support
 - ✅ Windows support
+- ✅ Automatic partial EPG recovery
+- ✅ Automatic channel metadata merge
+- ✅ Automatic programme merge
+
+---
+
+## 🚀 How it works
+
+The toolkit automatically detects whether the downloaded EPG is complete or partial.
+
+### Full update
+
+```
+RunnTV API
+      │
+      ▼
+Generate outputs
+      │
+      ▼
+Publish to GitHub
+```
+
+### Partial update
+
+If the API only returns a subset of channels (for example on GitHub Actions), the toolkit automatically:
+
+- merges missing programmes from the previous XMLTV
+- preserves missing channel metadata
+- preserves stream URLs
+- generates a complete playlist and XMLTV
+
+No manual intervention is required.
 
 ---
 
@@ -40,16 +80,14 @@ The toolkit downloads the latest RunnTV EPG, converts it into XMLTV format, gene
 
 ---
 
-## 📥 Downloads
-
-After each successful update, the following files are generated:
+## 📥 Generated Files
 
 | File | Description |
 |------|-------------|
 | `epg.xml` | XMLTV EPG |
 | `epg.xml.gz` | Compressed XMLTV |
 | `playlist.m3u` | IPTV playlist |
-| `channels.json` | Channel catalog |
+| `channels.json` | Channel catalog and stream URLs |
 | `stats.json` | Build statistics |
 | `manifest.json` | Build metadata |
 
@@ -71,61 +109,31 @@ python update.py
 
 ---
 
-## 📱 Android
-
-The toolkit works on Android using **Termux**.
+## 📱 Android (Termux)
 
 ```bash
 pkg install python git
+
 pip install -r requirements.txt
 
 python update.py
 ```
 
----
-
-## 💻 Windows
-
-Clone the repository:
-
-```bash
-git clone https://github.com/jasonramg/runn-tv-epg.git
-
-cd runn-tv-epg
-```
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-Run:
-
-```bash
-python update.py
-```
+The Android build can generate the complete channel lineup and publish it directly to GitHub.
 
 ---
 
-## 📊 Generated Files
+## ☁️ GitHub Actions
 
-The toolkit automatically generates:
+GitHub Actions automatically updates the repository on a schedule.
 
-- XMLTV
-- Compressed XMLTV
-- IPTV Playlist
-- Channel catalog
-- Statistics
-- Manifest
+When the API returns only a partial channel list, the toolkit merges the previous build to keep the published XMLTV and playlist complete.
 
 ---
 
 ## 🌐 GitHub Pages
 
-A project dashboard is available through GitHub Pages.
-
-It displays:
+A live dashboard is automatically published with:
 
 - Channel count
 - Programme count
@@ -136,29 +144,27 @@ It displays:
 
 ## 📄 License
 
-This project is licensed under the MIT License.
-
----
-
-## ⭐ Contributing
-
-Issues and pull requests are welcome.
+MIT License.
 
 ---
 
 ## 🛣 Roadmap
 
-### v1.2
-
-- Professional documentation
-- GitHub Pages
-- Validation improvements
-
 ### v1.3
 
-- Better XMLTV metadata
+- Hybrid updater
+- Automatic partial EPG merge
+- Automatic channel merge
+- Automatic programme merge
 - Improved logging
+- GitHub Pages dashboard
+
+### v1.4
+
+- Better channel diagnostics
+- Additional metadata
+- Improved validation
 
 ### v2.0
 
-- Additional provider support
+- Multiple provider support
