@@ -9,6 +9,8 @@ from src.version import VERSION
 from src.gitutils import git
 from src.logger import log
 
+git("fetch", "origin")
+
 log.info("RunnTV Toolkit v%s", VERSION)
 
 XML = Path("output/epg.xml")
@@ -73,15 +75,14 @@ message = f"EPG Update - {timestamp}"
 git("commit", "-m", message)
 
 try:
-
     git("push")
+    log.info("GitHub updated.")
 
 except Exception:
 
-    log.warning("Push failed. Rebasing and retrying...")
+    log.warning(
+        "Push rejected because the repository changed. "
+        "Skipping this run."
+    )
 
-    git("pull", "--rebase")
-
-    git("push")
-
-log.info("GitHub updated.")
+    sys.exit(0)
