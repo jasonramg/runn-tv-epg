@@ -1,3 +1,5 @@
+from pathlib import Path
+
 from src.downloader import Downloader
 from src.parser import parse
 from src.xmltv import write_xmltv
@@ -8,11 +10,47 @@ from src.channels_json import write_channels
 from src.manifest import write_manifest
 from src.logger import log
 
+from src.merge import merge_programmes
+from src.xmltv_reader import read_xmltv
+
+OUTPUT_XML = Path("output/epg.xml")
+
 def main():
 
     xml = Downloader().download()
 
     channels, programmes = parse(xml)
+
+    if OUTPUT_XML.exists():
+
+        old_channels, old_programmes = read_xmltv(
+            OUTPUT_XML
+        )
+
+        new_ids = {
+            c.id
+            for c in channels
+        }
+
+        old_ids = {
+            c.id
+            for c in old_channels
+        }
+
+        if new_ids < old_ids:
+
+            log.info(
+                "Partial EPG detected "
+                "(%d/%d channels). "
+                "Merging...",
+                len(new_ids),
+                len(old_ids)
+            )
+
+            programmes = merge_programmes(
+                old_programmes,
+                programmes
+            )
 
     log.info("Channels   : %d", len(channels))
     log.info("Programmes : %d", len(programmes))

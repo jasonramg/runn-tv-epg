@@ -72,6 +72,16 @@ message = f"EPG Update - {timestamp}"
 
 git("commit", "-m", message)
 
-git("push")
+try:
+
+    git("push")
+
+except Exception:
+
+    log.warning("Push failed. Rebasing and retrying...")
+
+    git("pull", "--rebase")
+
+    git("push")
 
 log.info("GitHub updated.")
