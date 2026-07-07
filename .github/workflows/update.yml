@@ -42,11 +42,3 @@ jobs:
         with:
           name: api-response
           path: response.bin
-
-      - name: Show runner public IP
-        run: |
-          echo "Public IP:"
-          curl https://api.ipify.org
-          echo
-          echo "Geo:"
-          curl https://ipinfo.io/json
