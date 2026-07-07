@@ -13,6 +13,8 @@ from src.logger import log
 from src.merge import merge_programmes
 from src.xmltv_reader import read_xmltv
 from src.merge_channels import merge_channels
+from src.channels_reader import read_channels
+from src.channel_state import analyze_channels
 
 OUTPUT_XML = Path("output/epg.xml")
 
@@ -27,7 +29,11 @@ def main():
 
     if OUTPUT_XML.exists():
 
-        old_channels, old_programmes = read_xmltv(
+        old_channels = read_channels(
+            Path("output/channels.json")
+        )
+
+        _, old_programmes = read_xmltv(
             OUTPUT_XML
         )
 
@@ -41,10 +47,15 @@ def main():
             for c in old_channels
         }
 
-        if len(new_ids) < len(old_ids) and new_ids.issubset(old_ids):
+        state = analyze_channels(
+            old_ids,
+            new_ids
+        )
+
+        if state.is_partial:
 
             log.info(
-                "Partial EPG detected (%d/%d channels). Merging...",
+                "Partial EPG detected (%d/%d channels).",
                 len(new_ids),
                 len(old_ids)
             )
@@ -57,6 +68,28 @@ def main():
             programmes = merge_programmes(
                 old_programmes,
                 programmes
+            )
+
+        elif state.has_new_channels:
+
+            log.info(
+                "Channel lineup changed."
+            )
+
+            log.info(
+                "Added channels: %d",
+                len(state.added)
+            )
+
+            log.info(
+                "Missing channels: %d",
+                len(state.missing)
+            )
+
+        else:
+
+            log.info(
+                "Complete channel lineup."
             )
 
     log.info("Downloaded channels : %d", downloaded_channel_count)
