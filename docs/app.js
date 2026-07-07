@@ -20,15 +20,46 @@ fetch(BASE + "output/manifest.json")
 
         for (const [name, file] of Object.entries(manifest.downloads)) {
 
-            const link = document.createElement("a");
+            const row = document.createElement("div");
+            row.className = "download-row";
 
-            link.className = "download";
+            const filename = document.createElement("span");
+            filename.className = "filename";
+            filename.textContent = file;
 
-            link.href = BASE + "output/" + file;
+            const actions = document.createElement("div");
+            actions.className = "actions";
 
-            link.textContent = "📥 " + file;
+            const download = document.createElement("a");
+            download.className = "btn";
+            download.href = BASE + "output/" + file;
+            download.download = "";
+            download.textContent = "📥 Download";
 
-            downloads.appendChild(link);
+            const copy = document.createElement("button");
+            copy.className = "btn";
+            copy.textContent = "📋 Copy Link";
+
+            copy.onclick = () => {
+
+                const url =
+                    window.location.origin +
+                    BASE +
+                    "output/" +
+                    file;
+
+                navigator.clipboard.writeText(url);
+
+                showToast("Copied " + file);
+            };
+
+            actions.appendChild(download);
+            actions.appendChild(copy);
+
+            row.appendChild(filename);
+            row.appendChild(actions);
+
+            downloads.appendChild(row);
         }
 
     })
@@ -40,3 +71,34 @@ fetch(BASE + "output/manifest.json")
         );
 
     });
+
+function showToast(message) {
+
+    const toast =
+        document.getElementById("toast");
+
+    toast.textContent = message;
+
+    toast.classList.add("show");
+
+    setTimeout(() => {
+
+        toast.classList.remove("show");
+
+    }, 1800);
+
+}
+
+function copyQuick(file) {
+
+    const url =
+        window.location.origin +
+        BASE +
+        "output/" +
+        file;
+
+    navigator.clipboard.writeText(url);
+
+    showToast(file + " URL copied");
+
+}
