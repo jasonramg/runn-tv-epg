@@ -15,6 +15,7 @@ from src.xmltv_reader import read_xmltv
 from src.merge_channels import merge_channels
 from src.channels_reader import read_channels
 from src.channel_state import analyze_channels
+from src.programme_cleanup import keep_recent_programmes
 
 OUTPUT_XML = Path("output/epg.xml")
 
@@ -68,6 +69,18 @@ def main():
             programmes = merge_programmes(
                 old_programmes,
                 programmes
+            )
+
+            before = len(programmes)
+
+            programmes = keep_recent_programmes(
+                programmes
+            )
+
+            log.info(
+                "Programme cleanup: %d → %d",
+                before,
+                len(programmes)
             )
 
         elif state.has_new_channels:
