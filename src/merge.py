@@ -1,33 +1,32 @@
-from datetime import datetime, timezone
 from src.logger import log
 
 
-def merge_programmes(old_programmes,
-                     new_programmes):
+def merge_programmes(old_programmes, new_programmes):
 
-    updated_channels = {
-        p.channel
-        for p in new_programmes
-    }
+    merged = {}
 
-    merged = []
-
+    # Add old programmes first
     for p in old_programmes:
 
-        if p.channel not in updated_channels:
-            merged.append(p)
+        key = (
+            p.channel,
+            p.start
+        )
 
-    merged.extend(new_programmes)
+        merged[key] = p
 
-    now = datetime.now(timezone.utc)
+    # Replace with newer downloaded versions
+    for p in new_programmes:
 
-    merged = [
-        p
-        for p in merged
-        if p.stop > now
-    ]
+        key = (
+            p.channel,
+            p.start
+        )
 
-    merged.sort(
+        merged[key] = p
+
+    programmes = sorted(
+        merged.values(),
         key=lambda p: (
             p.channel,
             p.start
@@ -36,7 +35,7 @@ def merge_programmes(old_programmes,
 
     log.info(
         "Merged result: %d programmes",
-        len(merged)
+        len(programmes)
     )
 
-    return merged
+    return programmes

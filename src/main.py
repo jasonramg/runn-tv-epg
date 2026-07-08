@@ -28,6 +28,8 @@ def main():
     downloaded_channel_count = len(channels)
     downloaded_programme_count = len(programmes)
 
+    old_programmes = []
+
     if OUTPUT_XML.exists():
 
         old_channels = read_channels(
@@ -66,11 +68,6 @@ def main():
                 channels
             )
 
-            programmes = merge_programmes(
-                old_programmes,
-                programmes
-            )
-
         elif state.has_new_channels:
 
             log.info(
@@ -92,12 +89,35 @@ def main():
             log.info(
                 "Complete channel lineup."
             )
+    
+    before_merge = len(programmes)
+
+    programmes = merge_programmes(
+        old_programmes,
+        programmes
+    )
+
+    log.info(
+        "Programme merge: +%d",
+        len(programmes) - before_merge
+    )
 
     before = len(programmes)
 
     programmes = keep_recent_programmes(
         programmes
     )
+
+    if programmes:
+
+        earliest = min(p.start for p in programmes)
+        latest = max(p.stop for p in programmes)
+
+        log.info(
+            "Programme range : %s -> %s",
+            earliest,
+            latest
+        )
 
     removed = before - len(programmes)
 

@@ -1,20 +1,13 @@
-from datetime import timedelta
+from datetime import datetime, timedelta, timezone
 
 from .config import KEEP_HISTORY_DAYS
 
 
 def keep_recent_programmes(programmes):
 
-    if not programmes:
-        return programmes
-
-    latest = max(
-        p.stop
-        for p in programmes
-    )
-
-    cutoff = latest - timedelta(
-        days=KEEP_HISTORY_DAYS
+    cutoff = (
+        datetime.now(timezone.utc)
+        - timedelta(days=KEEP_HISTORY_DAYS)
     )
 
     return [
