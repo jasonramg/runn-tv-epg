@@ -1,6 +1,27 @@
 from datetime import datetime, timedelta, timezone
 from lxml import etree
 from .models import Channel, Programme
+from .config import IMAGE_PREFERENCE
+
+def find_best_image(parent):
+
+    if parent is None:
+        return ""
+
+    for tag in IMAGE_PREFERENCE:
+
+        node = parent.find(tag)
+
+        if node is not None and node.text:
+            return node.text
+
+    # Fallback: first non-empty child
+    for node in parent:
+
+        if node.text:
+            return node.text
+
+    return ""
 
 
 def parse(xml: bytes):
@@ -16,10 +37,12 @@ def parse(xml: bytes):
 
         base = item.findtext("baseSourceLocation", "")
 
-        logo = ""
-        logo_node = item.find("./images/logo/web")
-        if logo_node is not None and logo_node.text:
-            logo = base + logo_node.text
+        logo = find_best_image(
+            item.find("./images/logo")
+        )
+
+        if logo:
+            logo = base + logo
 
         channels.append(
             Channel(
@@ -46,10 +69,12 @@ def parse(xml: bytes):
 
             stop = start + timedelta(seconds=duration)
 
-            icon = ""
-            icon_node = sched.find("./infoImages/web")
-            if icon_node is not None and icon_node.text:
-                icon = base + icon_node.text
+            icon = find_best_image(
+                sched.find("./infoImages")
+            )
+
+            if icon:
+                icon = base + icon
 
             programmes.append(
                 Programme(

@@ -17,3 +17,10 @@ USER_AGENT = (
 DEBUG = False
 
 KEEP_HISTORY_DAYS = 3
+
+IMAGE_PREFERENCE = (
+    "web",
+    "mobile",
+    "tv",
+    "partner",
+)
