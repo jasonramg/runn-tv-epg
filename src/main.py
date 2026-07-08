@@ -71,18 +71,6 @@ def main():
                 programmes
             )
 
-            before = len(programmes)
-
-            programmes = keep_recent_programmes(
-                programmes
-            )
-
-            log.info(
-                "Programme cleanup: %d → %d",
-                before,
-                len(programmes)
-            )
-
         elif state.has_new_channels:
 
             log.info(
@@ -105,6 +93,18 @@ def main():
                 "Complete channel lineup."
             )
 
+    before = len(programmes)
+
+    programmes = keep_recent_programmes(
+        programmes
+    )
+
+    removed = before - len(programmes)
+
+    log.info(
+        "Removed %d expired programmes",
+        removed
+    )
     log.info("Downloaded channels : %d", downloaded_channel_count)
     log.info("Downloaded programmes : %d", downloaded_programme_count)
 
