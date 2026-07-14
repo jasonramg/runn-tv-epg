@@ -298,7 +298,7 @@
         "name": "News Nation",
         "category": "News",
         "logo": "https://dnuk7lvye3m03.cloudfront.net/runntv/platform/channels/NEWNAT/Web/thumbnail/NEWS NATION Channel Logo.png",
-        "stream": "https://news9.cdn.runn.tv/amg01106c3/hls.m3u8"
+        "stream": "https://newsnation.cdn.runn.tv/national/master_nnna_runntv.m3u8"
     },
     {
         "id": "nnbrjh",
