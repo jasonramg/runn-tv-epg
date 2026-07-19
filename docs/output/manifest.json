@@ -1,9 +1,9 @@
 {
     "generator": "RunnTV Toolkit",
     "version": "1.3.0",
-    "generated": "2026-07-19T16:12:42.479760+00:00",
+    "generated": "2026-07-19T19:34:48.570516+00:00",
     "channels": 84,
-    "programmes": 16735,
+    "programmes": 17704,
     "downloads": {
         "epg": "epg.xml",
         "epg_gz": "epg.xml.gz",
